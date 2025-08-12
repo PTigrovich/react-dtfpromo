@@ -1,0 +1,54 @@
+.textContainer {
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  padding: 20px 100px 20px 20px;
+  background-color: rgb(196, 223, 240);
+  flex-direction: column;
+  box-sizing: border-box;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  
+  .productName {
+    color: rgb(0, 0, 0);
+    margin: 0;
+    font-size: 23px;
+    font-weight: bold;
+    text-align: left;
+    padding-top: 20px;
+    transition: color 0.3s ease;
+  }
+
+  .productDescription {
+    color: rgb(104, 101, 104);
+    margin: 0;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 20px;
+    transition: color 0.3s ease;
+  }
+
+  box-shadow: 
+    3px 0 3.75px -1px rgba(0, 0, 0, 0.025),
+    -3px 0 3.75px -1px rgba(0, 0, 0, 0.025),
+    0 5px 7.5px -1.5px rgba(0, 0, 0, 0.1);
+  
+  border-radius: 8px;
+
+  &:hover {
+     background-color: rgb(166, 208, 236); // Более насыщенный голубой
+  transform: translateY(-10px) scale(1.02);
+  box-shadow:
+    0 15px 30px rgba(72, 157, 254, 0.3), // Увеличенное сияние (в 2 раза сильнее)
+    0 8px 12px rgba(0, 0, 0, 0.15); // Усиленная объемная тень
+    
+    
+    
+    .productDescription {
+      color: rgb(54, 54, 54); // Более насыщенный серый
+    }
+  }
+}
+    
+
+   
+

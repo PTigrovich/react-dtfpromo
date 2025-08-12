@@ -1,0 +1,39 @@
+	.header__nav {
+		height: 40px;
+		width: 500px;
+		background-color: transparent;
+		display:flex;
+	   align-items: center;
+	   justify-content: space-between;
+
+		font-family: 'Poppins', sans-serif;
+  		
+	}
+
+	.nav__link{
+		color: rgb(255, 255, 255);
+		text-decoration: none;
+		font-size: 16px;
+		
+		transition: color 0.3s ease;
+
+		&:hover {
+    		color: rgb(196, 223, 240);
+  		}
+
+		&.active { 
+    		color:#489dfe;
+    		font-weight: 600; 
+  		}
+	}
+
+	.navLink__contact{
+			margin-right:90px;
+			color: rgb(125, 120, 125);
+  			font-weight: 600;
+
+
+			&:hover {
+    				color: #000;
+  			}
+		}

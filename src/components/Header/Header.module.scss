@@ -1,0 +1,29 @@
+.headerContainer {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+  max-width: 1500px;
+  min-width: 1500px;
+  height: 80px;
+  padding: 0 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  
+  background: rgba(0, 6, 19, 0.881);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(10px);
+	
+
+	
+
+
+
+	
+}

@@ -1,0 +1,78 @@
+.footer {
+  background: rgb(17, 23, 35);
+  color: white;
+  padding: 40px 0 20px; // Увеличил верхний отступ для логотипа
+  font-family: 'Poppins', sans-serif;
+  margin-top: 100px;
+  position: relative; // Для позиционирования логотипа
+  max-width: 1500px;
+  min-width: 1500px;
+  
+  	.columnLogo {
+  	 width: fit-content; // Ширина по содержимому
+  	 margin: 0 auto; // Центрирование + отступ снизу
+  	 font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+   }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 40px; // Отступы по краям контейнера
+    position: relative;
+  }
+
+
+  
+
+  .columnTitle {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .contactInfo p,
+  .promoContent p {
+    margin: 15px 0;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .footerNav {
+    display: flex;
+    flex-direction: column;
+
+    .navLink {
+      color: white;
+      text-decoration: none;
+      margin-top: 15px ;
+      transition: color 0.3s;
+      font-size: 15px;
+
+      &:hover {
+        color: #ccc;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .copyright {
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+   
+}
+
+ .columnLogo{
+	margin: 0 auto;
+ }

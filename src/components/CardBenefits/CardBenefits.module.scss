@@ -1,0 +1,97 @@
+.itemCard {
+  width: 100%;
+  background-color: rgb(239, 244, 247);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  transition: 
+    transform 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28),
+    box-shadow 0.4s ease-out,
+    background-color 0.3s ease;
+
+  .imageWrapper {
+    width: 250px;
+    height: 170px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 8px;
+  }
+
+  .productImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: transform 0.4s ease;
+  }
+
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+
+    .productName {
+      text-align: center;
+      color: rgb(0, 0, 0);
+      margin: 0;
+      font-size: 23px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .productDescription {
+      padding-top: 20px;
+      color: rgb(104, 101, 104);
+      margin: 0;
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+  }
+
+  /* Тени в покое */
+  box-shadow: 
+    3px 0 3.75px -1px rgba(0, 0, 0, 0.025),
+    -3px 0 3.75px -1px rgba(0, 0, 0, 0.025),
+    0 5px 7.5px -1.5px rgba(0, 0, 0, 0.1);
+
+  /* Эффекты при наведении */
+  &:hover {
+    background-color: rgb(230, 240, 247); /* Слегка осветленный фон */
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 
+      0 15px 30px rgba(72, 157, 254, 0.25), /* Синее сияние */
+      0 8px 16px rgba(0, 0, 0, 0.15); /* Усиленная объемная тень */
+    
+    .productName {
+      color: #0066cc; /* Более насыщенный цвет */
+    }
+    
+    .productDescription {
+      color: rgb(80, 80, 80); /* Более контрастный серый */
+    }
+    
+    .productImage {
+      transform: scale(1.05); /* Легкое увеличение изображения */
+    }
+  }
+
+  /* Активное состояние (нажатие) */
+  &:active {
+    transform: translateY(-5px) scale(0.99);
+    box-shadow: 
+      0 8px 20px rgba(72, 157, 254, 0.2),
+      0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+}

@@ -1,0 +1,22 @@
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;  // Контент занимает всё свободное место
+  
+}
+
+// Если Header должен быть sticky:
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+// Если Footer должен быть внизу:
+.footer {
+  margin-top: auto;  // Прижимает футер вниз
+}
