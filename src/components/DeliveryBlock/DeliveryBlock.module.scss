@@ -2,6 +2,9 @@
 	
 	background-color: rgb(255, 255, 255);
 	padding: 30px 20px;
+	display: flex;
+   flex-direction: column;
+   height: 100%;
 	transition: 
     transform 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28),
     box-shadow 0.4s ease-out,
@@ -27,13 +30,14 @@
       margin: 0;
       font-size: 23px;
       font-weight: bold;
-      
+      margin-bottom: 25px;
 	 }
 
 	 &__description {
-      color: rgb(104, 101, 104);     
+         
       font-size: 16px;
       font-weight: bold;
+		flex: 1;
       
     }
 }

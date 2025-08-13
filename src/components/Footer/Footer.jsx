@@ -8,7 +8,7 @@ function Footer() {
             <div className={styles.container}>
                 {/* Левая колонка - Контакты */}
                 <div className={styles.column}>
-                    <h3 className={styles.columnTitle}>Contact Us</h3>
+                    <h3 className={styles.columnTitle}>Контакты</h3>
                     <div className={styles.contactInfo}>
                         <p>E-mail: info@dtfdirect.com</p>
                         <p>Phone: +7 800 88 88</p>
@@ -19,16 +19,16 @@ function Footer() {
 
                 {/* Правая колонка - Быстрые ссылки */}
                 <div className={styles.column}>
-                    <h3 className={styles.columnTitle}>Quick Links</h3>
+                    <h3 className={styles.columnTitle}>Навигация</h3>
                     <nav className={styles.footerNav}>
                         <NavLink to="/" className={styles.navLink}>
-                            Home
+                            Главная
                         </NavLink>
                         <NavLink to="/delivery" className={styles.navLink}>
-                            Delivery
+                            Доставка
                         </NavLink>
                         <NavLink to="/contact" className={styles.navLink}>
-                            Contact Us
+                            Контакты
                         </NavLink>
                     </nav>
                 </div>

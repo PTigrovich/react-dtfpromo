@@ -1,4 +1,4 @@
-import { NavLink, useLocation, useNavigate } from 'react-router-dom';
+
 import styles from './Header.module.scss';
 import Logo from '../Logo/Logo';
 import Nav from '../Nav/Nav';

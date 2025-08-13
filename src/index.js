@@ -2,7 +2,7 @@ import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './styles/index.scss';
 import Home from './pages/Home/Home';
-import About from './pages/About/About';
+import Contact from './pages/Contact/Contact';
 import Delivery from './pages/Delivery/Delivery';
 
 
@@ -19,8 +19,8 @@ const router = createBrowserRouter([
         element: <Delivery />,
     },
     {
-        path: '/about',
-        element: <About />,
+        path: '/contact',
+        element: <Contact />,
     },
 ]);
 root.render(
