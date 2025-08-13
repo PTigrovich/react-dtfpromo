@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import styles from './FloatingContactButton.module.scss';
-import BackCallForm from './BackCallForm'; // твоя форма
+import FormBackCall from '../FormBackCall/FormBackCall'; // твоя форма
 
 import { FaTelegramPlane } from 'react-icons/fa';
 import { FaWhatsapp } from 'react-icons/fa';
@@ -34,7 +34,7 @@ export default function FloatingContactButton() {
             {showForm && (
                 <div className={styles.modalOverlay} onClick={() => setShowForm(false)}>
                     <div className={styles.modalContent} onClick={e => e.stopPropagation()}>
-                        <BackCallForm />
+                        <FormBackCall />
                         <button className={styles.closeButton} onClick={() => setShowForm(false)}>
                             ✕
                         </button>
