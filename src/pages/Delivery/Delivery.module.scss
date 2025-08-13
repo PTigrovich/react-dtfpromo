@@ -39,6 +39,7 @@
 
 .wrapper__smallWrapper{
 	height: 200px;
+	
 }
 
 .pricing {
@@ -57,13 +58,16 @@
 
 .pricing__title {
   color: #000; /* Черный цвет для названий */
-  font-size: 16px;
-  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;   
+      font-size: 16px;
+      font-weight: 600;
 }
 
 .pricing__price {
   color: rgb(104, 101, 104);
   margin-left: 16px; /* Отступ от названия */
+  font-family: 'Open Sans', sans-serif; 
+  font-weight: 600;
 }
 
 .logistic{
@@ -94,12 +98,15 @@
 	 
   }
 
-  .container {
+  .question {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 20px; /* Отступ между блоками */
-  height: 100%; /* Или фиксированная высота */
+  
+  
+  
+  
 }
 
 .block {
@@ -107,12 +114,16 @@
 }
 
 .question {
-  font-weight: bold;
+  
   color: #000; /* Чёрный */
   margin-bottom: 8px; /* Отступ между вопросом и ответом */
+  font-family: 'Open Sans', sans-serif; 
+  font-weight: 600;
 }
 
 .answer {
   color: rgb(104, 101, 104);
   font-weight: normal;
+  font-family: 'Open Sans', sans-serif; 
+ 
 }

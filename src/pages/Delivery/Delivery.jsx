@@ -46,7 +46,7 @@ function About() {
                         </div>
                     </DeliveryBlock>
                     <DeliveryBlock className={styles.middleWrapper__block} title={'Часто спрашивают'}>
-                        <div className={styles.container}>
+                        <div className={styles.question}>
                             {/* Блок 1 */}
                             <div className={styles.block}>
                                 <p className={styles.question}>Вопрос 1</p>
@@ -68,7 +68,7 @@ function About() {
                     </DeliveryBlock>
                 </div>
                 <DeliveryBlock className={styles.wrapper__smallWrapper} title={'Наши Контакты'}>
-                    <p>
+                    <p >
                         Для получения дополнительной помощи обращайтесь в нашу службу поддержки клиентов по адресу support@dtfdirect.com или звоните нам по
                         телефону (123) 456-7890.
                     </p>

@@ -49,8 +49,12 @@
 }
 
 .form__textarea {
-  min-height: 100px;
+  max-height: 300px;
+  min-height: 145px; /* Фиксированная начальная высота */
   resize: vertical;
+  resize: none; /* Запрещаем изменение размера */
+  
+  overflow-y: auto; /* Добавляем скролл при необходимости */
   
   &::placeholder {
     color: #999;

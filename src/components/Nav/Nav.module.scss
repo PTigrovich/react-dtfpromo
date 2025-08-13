@@ -5,8 +5,8 @@
 		display:flex;
 	   align-items: center;
 	   justify-content: space-between;
-
-		font-family: 'Poppins', sans-serif;
+		font-weight: 400;
+		font-family: 'Inter', sans-serif;
   		
 	}
 
@@ -14,9 +14,9 @@
 		color: rgb(255, 255, 255);
 		text-decoration: none;
 		font-size: 16px;
-		
 		transition: color 0.3s ease;
-
+		
+		
 		&:hover {
     		color: rgb(196, 223, 240);
   		}

@@ -6,14 +6,14 @@
    flex-direction: column;
    height: 100%;
 	transition: 
-    transform 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28),
-    box-shadow 0.4s ease-out,
-    background-color 0.3s ease;
+   transform 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28),
+   box-shadow 0.4s ease-out,
+   background-color 0.3s ease;
 
 	box-shadow: 
-  6px 0 7.5px -2px rgba(0, 0, 0, 0.025),  /* Левая тень x2 */
-  -6px 0 7.5px -2px rgba(0, 0, 0, 0.025), /* Правая тень x2 */
-  0 10px 15px -3px rgba(0, 0, 0, 0.1);    /* Нижняя тень x2 */
+  					6px 0 7.5px -2px rgba(0, 0, 0, 0.025),  /* Левая тень x2 */
+  					-6px 0 7.5px -2px rgba(0, 0, 0, 0.025), /* Правая тень x2 */
+  					0 10px 15px -3px rgba(0, 0, 0, 0.1);    /* Нижняя тень x2 */
 
 	/* Эффекты при наведении */
    &:hover {
@@ -29,14 +29,15 @@
       color: rgb(0, 0, 0);
       margin: 0;
       font-size: 23px;
-      font-weight: bold;
+      font-weight: 500;
+	   font-family: 'Poppins', sans-serif;
       margin-bottom: 25px;
 	 }
 
 	 &__description {
-         
+      font-family: 'Open Sans', sans-serif;   
       font-size: 16px;
-      font-weight: bold;
+      font-weight: 500;
 		flex: 1;
       
     }
