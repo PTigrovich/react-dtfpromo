@@ -49,8 +49,8 @@
 }
 
 .form__textarea {
-  max-height: 300px;
-  min-height: 145px; /* Фиксированная начальная высота */
+  max-height: 10px;
+  min-height: 120px; /* Фиксированная начальная высота */
   resize: vertical;
   resize: none; /* Запрещаем изменение размера */
   
