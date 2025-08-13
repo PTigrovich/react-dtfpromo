@@ -8,7 +8,11 @@ function FormBackCall() {
                 <label className={styles.form__label}>Имя</label>
                 <input type="text" className={styles.form__input} placeholder="Ваше имя" />
             </div>
-					
+
+            <div className={styles.form__section}>
+                <label className={styles.form__label}>Номер</label>
+                <input type="email" className={styles.form__input} placeholder="Ваш номер" />
+            </div>
             <div className={styles.form__section}>
                 <label className={styles.form__label}>Почта</label>
                 <input type="email" className={styles.form__input} placeholder="Ваша почта" />
