@@ -1,5 +1,5 @@
 import styles from './FormBackCall.module.scss';
-import ButtonQuote from '../../components/ButtonQuote/ButtonQuote';
+import ButtonForm from '../../components/ButtonForm/ButtonForm';
 
 function FormBackCall() {
     return (
@@ -22,7 +22,7 @@ function FormBackCall() {
                 <label className={styles.form__label}>Сообщение</label>
                 <textarea className={`${styles.form__input} ${styles.form__textarea}`} placeholder="Ваше сообщение" />
             </div>
-            <ButtonQuote className={styles.form__button}> Отправить </ButtonQuote>
+            <ButtonForm className={styles.form__button}> Отправить </ButtonForm>
         </form>
     );
 }
