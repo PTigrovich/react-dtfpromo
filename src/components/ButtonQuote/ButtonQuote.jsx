@@ -3,10 +3,10 @@ import styles from './ButtonQuote.module.scss';
 
 
 
-const ButtonQuote = ({ className }) => {
+const ButtonQuote = ({ className, children }) => {
     return (
         <button className={`${styles.button__quote} ${className}`}>
-            Запросить <br /> коммерческое предложение
+            {children}
         </button>
     );
 };

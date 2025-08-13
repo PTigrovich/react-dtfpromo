@@ -1,0 +1,50 @@
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  
+}
+
+.form__section {
+  display: flex;
+  flex-direction: column;
+  gap: 6px; /* отступ между лейблом и полем */
+}
+
+.form__label {
+  font-size: 18px;
+  font-weight: 600;
+  
+  color: #333;
+}
+
+.form__input {
+  padding: 10px 12px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  outline: none;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  font-size: 16px;
+  color: rgb(54, 54, 54);
+
+  
+}
+
+
+
+.form__input:focus {
+  border-color: rgb(196, 223, 240);
+  background-color: rgb(196, 223, 240);
+}
+
+.form__textarea {
+  min-height: 100px;
+  resize: vertical;
+  
+}
+.form__button{
+	height: 50px;
+}
