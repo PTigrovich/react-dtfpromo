@@ -1,10 +1,7 @@
 import styles from './Footer.module.scss';
 import { NavLink } from 'react-router-dom';
+import IconsDirect from '../IconsDirect/IconsDirect';
 
-// Импортируем SVG иконки (предполагается, что они лежат в папке assets/icons)
-import WhatsAppIcon from '../../assets/images/whatsapp-icon.svg';
-import TelegramIcon from '../../assets/images/telegram-icon.svg';
-import ViberIcon from '../../assets/images/viber-icon.svg';
 
 function Footer() {
     return (
@@ -12,17 +9,7 @@ function Footer() {
             <div className={styles.columnLogo}>DTF Promo</div>
 
             {/* Блок с иконками мессенджеров */}
-            <div className={styles.messengers}>
-                <a href="https://wa.me/78008888" target="_blank" rel="noopener noreferrer">
-                    <img src={WhatsAppIcon} alt="WhatsApp" className={styles.messengerIcon} />
-                </a>
-                <a href="https://t.me/dtfpromo" target="_blank" rel="noopener noreferrer">
-                    <img src={TelegramIcon} alt="Telegram" className={styles.messengerIcon} />
-                </a>
-                <a href="viber://chat?number=78008888" target="_blank" rel="noopener noreferrer">
-                    <img src={ViberIcon} alt="Viber" className={styles.messengerIcon} />
-                </a>
-            </div>
+            <IconsDirect/>
 
             <div className={styles.container}>
                 {/* Левая колонка - Контакты */}
