@@ -1,7 +1,7 @@
 import styles from './ContactBlock.module.scss';
 import { ReactComponent as EmailIcon } from '../../assets/images/email.svg';
 import { ReactComponent as PhoneIcon } from '../../assets/images/phone.svg';
-
+import IconsDirect from '../IconsDirect/IconsDirect'
 function ContactBlock({ title, className, children }) {
     return (
         <div className={styles.contacts__container}>
@@ -19,6 +19,7 @@ function ContactBlock({ title, className, children }) {
                     </span>
                     <span className={styles.contact__text}>Почта: example@domain.com</span>
                 </div>
+					 <IconsDirect/>
             </div>
 
             <div className={styles.contacts__media}>
