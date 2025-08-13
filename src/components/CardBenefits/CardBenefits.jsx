@@ -3,7 +3,7 @@ import styles from './CardBenefits.module.scss';
 function CardBenefits({ img, text, name }) {
     return (
         <div className={styles.itemCard}>
-            <div className={styles.imageWrapper}>
+            <div className={styles.imageWrapper }>
                 <img
                     src={process.env.PUBLIC_URL + img}
                     alt={name}
