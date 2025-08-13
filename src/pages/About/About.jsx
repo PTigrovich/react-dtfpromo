@@ -1,7 +1,13 @@
 import styles from './About.module.scss';
-import Header from '../../components/Header/Header';
+import ButtonQuote from '../../components/ButtonQuote/ButtonQuote';
+import Layout from '../../components/Layout/Layout';
+import SectionBenefits from '../../components/SectionBenefits/SectionBenefits';
+import SectionPriority from '../../components/SectionPriority/SectionPriority';
 
 function About() {
-    return <Header />;
+    return (
+        <Layout>
+        </Layout>
+    );
 }
 export default About;

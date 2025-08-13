@@ -1,0 +1,39 @@
+.content{
+	
+	background-color: rgb(255, 255, 255);
+	padding: 30px 20px;
+	transition: 
+    transform 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28),
+    box-shadow 0.4s ease-out,
+    background-color 0.3s ease;
+
+	box-shadow: 
+  6px 0 7.5px -2px rgba(0, 0, 0, 0.025),  /* Левая тень x2 */
+  -6px 0 7.5px -2px rgba(0, 0, 0, 0.025), /* Правая тень x2 */
+  0 10px 15px -3px rgba(0, 0, 0, 0.1);    /* Нижняя тень x2 */
+
+	/* Эффекты при наведении */
+   &:hover {
+    background-color: rgb(230, 240, 247); /* Слегка осветленный фон */
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 
+      0 15px 30px rgba(72, 157, 254, 0.25), /* Синее сияние */
+      0 8px 16px rgba(0, 0, 0, 0.15); /* Усиленная объемная тень */
+
+	}
+
+	 &__title{
+      color: rgb(0, 0, 0);
+      margin: 0;
+      font-size: 23px;
+      font-weight: bold;
+      
+	 }
+
+	 &__description {
+      color: rgb(104, 101, 104);     
+      font-size: 16px;
+      font-weight: bold;
+      
+    }
+}

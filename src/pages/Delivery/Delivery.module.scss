@@ -1,13 +1,65 @@
 .content {
-  min-height: 100vh;
+  
   width: 100%;
   max-width: 1500px;
   min-width: 1500px;
   display: flex;
   flex-direction: column;
-  margin:0 auto;
-
-	
+  padding:40px 40px;
+  row-gap: 30px;
+  
+  
 	}
 
-  
+.wrapper__bigWrapper{
+	display: flex;
+	gap:30px;
+	flex-direction: row;
+	flex-wrap:nowrap;
+	height: 400px;
+
+	.bigWrapper__block{
+		flex: 1;
+   }
+}
+
+
+
+.wrapper__middleWrapper{
+	display: flex;
+	gap:30px;
+	flex-direction: row;
+	flex-wrap:nowrap;
+	height: 300px;
+
+	.middleWrapper__block{
+	flex: 1;
+  }
+}
+
+.wrapper__smallWrapper{
+	height: 200px;
+}
+
+.pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Выравнивание по левому краю */
+  gap: 8px; /* Отступ между строками */
+}
+
+.pricing__row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; /* Растягиваем на всю доступную ширину */
+}
+
+.pricing__title {
+  color: #000; /* Черный цвет для названий */
+  font-weight: 500;
+}
+
+.pricing__price {
+  color: #666; /* Серый цвет для цен */
+  margin-left: 16px; /* Отступ от названия */
+}
