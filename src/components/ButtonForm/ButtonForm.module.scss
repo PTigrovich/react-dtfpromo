@@ -31,7 +31,7 @@
 /* Яркий эффект при наведении с усиленным сиянием */
 .button__quote:hover {
   background-color: #2d8cff;
-  transform: translateY(-3px) scale(1.02);
+  transform: translateY(-3px) scale(1.01);
   box-shadow: 
     0 8px 32px rgba(72, 157, 254, 0.8), /* яркость была 0.5 → стало 0.8 */
     0 6px 12px rgba(0, 0, 0, 0.2); /* чуть плотнее тень */
