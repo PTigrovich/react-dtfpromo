@@ -1,10 +1,13 @@
 	.header__nav {
-		height: 40px;
 		width: 35%;
-		background-color: transparent;
+		max-width: 35%;
+		
 		display:flex;
 	   align-items: center;
 	   justify-content: space-between;
+		flex-wrap:wrap;
+		
+		background-color: transparent;
 		font-weight: 400;
 		font-family: 'Inter', sans-serif;
   		
@@ -15,7 +18,7 @@
 		text-decoration: none;
 		font-size: 16px;
 		transition: color 0.3s ease;
-		
+		display: flex;
 		
 		&:hover {
     		color: rgb(196, 223, 240);
@@ -37,3 +40,16 @@
     				color: #000;
   			}
 		}
+
+@media (max-width: 730px) {
+  .header__nav {
+    display:flex;
+	 justify-content: space-between;
+	 flex-direction: column;
+	 
+	 width: 15%;
+	 height: 100px;
+	 padding: 10px 0;
+  }
+}
+		
