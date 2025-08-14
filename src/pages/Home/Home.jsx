@@ -8,7 +8,7 @@ function Home() {
 
     return (
         <Layout>
-            <h2 className={styles.home__title}>Специализированная Прямая DTF-печать на текстиль</h2>
+            <h2 className={styles.home__title}>Профессиональная Прямая DTF-печать на текстиль</h2>
             <ButtonQuote className={styles.home__buttonQuote}>
                 Запросить <br /> коммерческое предложение
             </ButtonQuote>
