@@ -8,15 +8,12 @@ function Header() {
   
 
     return (
-        
-            <div className={styles.headerContainer}>
-                <header className={styles.header}>
-                    <Logo/>
-                    <Nav/>
-                   
-                </header>
-            </div>
-       
+        <div className={styles.header}>
+            <header className={styles.header__container}>
+                <Logo />
+                <Nav />
+            </header>
+        </div>
     );
 }
 
