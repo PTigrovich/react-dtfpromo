@@ -64,8 +64,6 @@ function About() {
                                     этим параметрам
                                 </p>
                             </div>
-
-                            
                         </div>
                     </DeliveryBlock>
                 </div>
