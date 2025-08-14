@@ -71,7 +71,7 @@
   /* Эффекты при наведении */
   &:hover {
     background-color: rgb(230, 240, 247); /* Слегка осветленный фон */
-    transform: translateY(-10px) scale(1.02);
+    transform: translateY(0px) scale(1.02);
     box-shadow: 
       0 15px 30px rgba(72, 157, 254, 0.25), /* Синее сияние */
       0 8px 16px rgba(0, 0, 0, 0.15); /* Усиленная объемная тень */

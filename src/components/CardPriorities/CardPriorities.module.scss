@@ -39,8 +39,8 @@
 
   &:hover {
      background-color: rgb(166, 208, 236); // Более насыщенный голубой
-  transform: translateY(-10px) scale(1.02);
-  box-shadow:
+      transform: translateY(0px) scale(1.02);
+      box-shadow:
     0 15px 30px rgba(72, 157, 254, 0.3), // Увеличенное сияние (в 2 раза сильнее)
     0 8px 12px rgba(0, 0, 0, 0.15); // Усиленная объемная тень
     
