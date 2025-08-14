@@ -7,7 +7,7 @@ import ContactBlock from '../../components/ContactBlock/ContactBlock';
 
 function Contact() {
     return (
-        <Layout>
+       
             <div className={styles.wrapper}>
                 <DeliveryBlock className={styles.form__block} title={'Обратная связь'}>
                     <div className={styles.form__container}>
@@ -19,7 +19,7 @@ function Contact() {
                     <ContactBlock/>
                 </DeliveryBlock>
             </div>
-        </Layout>
+        
     );
 }
 export default Contact;

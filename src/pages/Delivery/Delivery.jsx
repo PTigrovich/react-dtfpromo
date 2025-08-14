@@ -4,7 +4,7 @@ import DeliveryBlock from '../../components/DeliveryBlock/DeliveryBlock';
 
 function About() {
     return (
-        <Layout>
+        
             <div className={styles.content}>
                 <div className={styles.wrapper__bigWrapper}>
                     <DeliveryBlock className={styles.bigWrapper__block} title={'Способ доставки'}>
@@ -74,7 +74,7 @@ function About() {
                     </p>
                 </DeliveryBlock>
             </div>
-        </Layout>
+       
     );
 }
 export default About;
