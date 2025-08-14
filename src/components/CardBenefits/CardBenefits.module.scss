@@ -89,11 +89,5 @@
     }
   }
 
-  /* Активное состояние (нажатие) */
-  &:active {
-    transform: translateY(-5px) scale(0.99);
-    box-shadow: 
-      0 8px 20px rgba(72, 157, 254, 0.2),
-      0 4px 8px rgba(0, 0, 0, 0.1);
-  }
+  
 }

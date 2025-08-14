@@ -9,15 +9,15 @@ function Footer() {
             <div className={styles.columnLogo}>DTF Promo</div>
 
             {/* Блок с иконками мессенджеров */}
-            <IconsDirect/>
+            <IconsDirect />
 
             <div className={styles.container}>
                 {/* Левая колонка - Контакты */}
                 <div className={styles.column}>
                     <h3 className={styles.columnTitle}>Контакты</h3>
                     <div className={styles.contactInfo}>
-                        <p>E-mail: info@dtfdirect.com</p>
-                        <p>Phone: +7 800 88 88</p>
+                        <p>E-mail: example@dtf.promo</p>
+                        <p>Phone: +7 (800) 123-45-67</p>
                     </div>
                 </div>
 

@@ -12,14 +12,14 @@ function ContactBlock({ title, className, children }) {
                         <span className={styles.contact__icon}>
                             <PhoneIcon className={styles.icon} />
                         </span>
-                        <span className={styles.contact__text}>Телефон: +7 (123) 456-78-90</span>
+                        <span className={styles.contact__text}>Телефон: +7 (800) 123-45-67</span>
                     </div>
 
                     <div className={styles.contact__row}>
                         <span className={styles.contact__icon}>
                             <EmailIcon className={styles.icon} />
                         </span>
-                        <span className={styles.contact__text}>Почта: example@domain.com</span>
+                        <span className={styles.contact__text}>Почта: example@dtf.promo</span>
                     </div>
                 </div>
 
