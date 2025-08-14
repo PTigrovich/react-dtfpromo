@@ -1,6 +1,6 @@
 import styles from './Home.module.scss';
 import ButtonQuote from '../../components/ButtonQuote/ButtonQuote';
-import Layout from '../../components/Layout/Layout';
+
 import SectionBenefits from '../../components/SectionBenefits/SectionBenefits';
 import SectionPriority from '../../components/SectionPriority/SectionPriority';
 

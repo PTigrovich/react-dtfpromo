@@ -1,5 +1,5 @@
 import styles from './Delivery.module.scss';
-import Layout from '../../components/Layout/Layout';
+
 import DeliveryBlock from '../../components/DeliveryBlock/DeliveryBlock';
 
 function About() {

@@ -1,5 +1,5 @@
 import styles from './Contact.module.scss';
-import Layout from '../../components/Layout/Layout';
+
 import DeliveryBlock from '../../components/DeliveryBlock/DeliveryBlock';
 import FormBackCall from '../../components/FormBackCall/FormBackCall';
 import ContactBlock from '../../components/ContactBlock/ContactBlock';
