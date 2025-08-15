@@ -1,10 +1,13 @@
 import styles from './Home.module.scss';
 import ButtonQuote from '../../components/ButtonQuote/ButtonQuote';
-
+import { useEffect } from 'react'; 
 import SectionBenefits from '../../components/SectionBenefits/SectionBenefits';
 import SectionPriority from '../../components/SectionPriority/SectionPriority';
 
 function Home() {
+	 useEffect(() => {
+         window.scrollTo(0, 0);
+     }, []);
 
     return (
         <>

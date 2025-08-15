@@ -1,11 +1,14 @@
 import styles from './Contact.module.scss';
-
+import { useEffect } from 'react'; 
 import DeliveryBlock from '../../components/DeliveryBlock/DeliveryBlock';
 import FormBackCall from '../../components/FormBackCall/FormBackCall';
 import ContactBlock from '../../components/ContactBlock/ContactBlock';
 
 
 function Contact() {
+	useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
        
             <div className={styles.wrapper}>

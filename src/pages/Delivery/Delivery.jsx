@@ -1,8 +1,11 @@
 import styles from './Delivery.module.scss';
-
+import { useEffect } from 'react'; 
 import DeliveryBlock from '../../components/DeliveryBlock/DeliveryBlock';
 
 function About() {
+	useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         
             <div className={styles.content}>
