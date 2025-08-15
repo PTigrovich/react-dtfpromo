@@ -3,7 +3,7 @@
 		max-width: 35%;
 		
 		display:flex;
-	   align-items: center;
+	   
 	   justify-content: space-between;
 		flex-wrap:wrap;
 		
@@ -30,16 +30,7 @@
   		}
 	}
 
-	.navLink__contact{
-			margin-right:90px;
-			color: rgb(125, 120, 125);
-  			font-weight: 600;
-
-
-			&:hover {
-    				color: #000;
-  			}
-		}
+	
 
 @media (max-width: 730px) {
   .header__nav {
@@ -47,7 +38,7 @@
 	 justify-content: space-between;
 	 flex-direction: column;
 	 
-	 width: 15%;
+	 width: 80px;
 	 height: 100px;
 	 padding: 10px 0;
   }
