@@ -3,6 +3,7 @@ import ButtonQuote from '../../components/ButtonQuote/ButtonQuote';
 import { useEffect } from 'react'; 
 import SectionBenefits from '../../components/SectionBenefits/SectionBenefits';
 import SectionPriority from '../../components/SectionPriority/SectionPriority';
+import Catalog from '../../components/Catalog/Catalog';
 
 function Home() {
 	 useEffect(() => {
@@ -16,6 +17,7 @@ function Home() {
                 Рассчитать  стоимость заказа
             </ButtonQuote>
             <SectionBenefits />
+				<Catalog/>
             <h3 className={styles.home__subtitle}>Наш приоритет - Ваша выгода!</h3>
             <SectionPriority />
         </>
