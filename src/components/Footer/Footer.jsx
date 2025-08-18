@@ -16,7 +16,7 @@ function Footer() {
                 <div className={styles.column}>
                     <h3 className={styles.columnTitle}>Контакты</h3>
                     <div className={styles.contactInfo}>
-                        <p>E-mail: info@dtf.promo</p>
+                        <p>email: info@dtf.promo</p>
                         <p>Phone: +7(495)204-3904</p>
                     </div>
                 </div>
@@ -28,9 +28,7 @@ function Footer() {
                         <NavLink to="/" className={styles.navLink}>
                             Главная
                         </NavLink>
-                        <NavLink to="/delivery" className={styles.navLink}>
-                            Доставка
-                        </NavLink>
+                        
 
                         <NavLink to="/collab" className={styles.navLink}>
                             Сотрудничество

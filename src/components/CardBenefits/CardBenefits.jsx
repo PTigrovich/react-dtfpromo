@@ -1,8 +1,8 @@
 import styles from './CardBenefits.module.scss';
 
-function CardBenefits({ img, text, name }) {
+function CardBenefits({ img, text, name, className }) {
     return (
-        <div className={styles.itemCard}>
+        <div className={`${styles.itemCard} ${className || ''}`}>
             <div className={styles.imageWrapper}>
                 <img
                     src={process.env.PUBLIC_URL + img}
@@ -16,7 +16,6 @@ function CardBenefits({ img, text, name }) {
             <div className={styles.textContainer}>
                 <h3 className={styles.productName}>{name}</h3>
                 <p className={styles.productDescription}>{text}</p>
-					
             </div>
         </div>
     );
