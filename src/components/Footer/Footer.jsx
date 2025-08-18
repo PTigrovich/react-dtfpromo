@@ -34,6 +34,9 @@ function Footer() {
                         <NavLink to="/contact" className={styles.navLink}>
                             Контакты
                         </NavLink>
+                        <NavLink to="/collab" className={styles.navLink}>
+                            Сотрудничество
+                        </NavLink>
                     </nav>
                 </div>
             </div>

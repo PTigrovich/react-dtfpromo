@@ -20,6 +20,10 @@ function Nav() {
             <NavLink to="/contact" className={({ isActive }) => `${styles.nav__link} ${isActive ? styles.active : ''}`}>
                 Контакты
             </NavLink>
+
+            <NavLink to="/collab" className={({ isActive }) => `${styles.nav__link} ${isActive ? styles.active : ''}`}>
+                Сотрудничество
+            </NavLink>
         </nav>
     );
 }
