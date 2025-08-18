@@ -16,13 +16,13 @@ function Nav() {
                 Доставка
             </NavLink>
 
+            <NavLink to="/collab" className={({ isActive }) => `${styles.nav__link} ${isActive ? styles.active : ''}`}>
+                Сотрудничество
+            </NavLink>
+
             {/* About - обычный переход на страницу */}
             <NavLink to="/contact" className={({ isActive }) => `${styles.nav__link} ${isActive ? styles.active : ''}`}>
                 Контакты
-            </NavLink>
-
-            <NavLink to="/collab" className={({ isActive }) => `${styles.nav__link} ${isActive ? styles.active : ''}`}>
-                Сотрудничество
             </NavLink>
         </nav>
     );

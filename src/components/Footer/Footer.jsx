@@ -31,11 +31,12 @@ function Footer() {
                         <NavLink to="/delivery" className={styles.navLink}>
                             Доставка
                         </NavLink>
-                        <NavLink to="/contact" className={styles.navLink}>
-                            Контакты
-                        </NavLink>
+
                         <NavLink to="/collab" className={styles.navLink}>
                             Сотрудничество
+                        </NavLink>
+                        <NavLink to="/contact" className={styles.navLink}>
+                            Контакты
                         </NavLink>
                     </nav>
                 </div>
