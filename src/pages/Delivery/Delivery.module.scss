@@ -48,6 +48,10 @@
   gap: 20px; /* Отступ между строками */
   
 }
+.pricing__description{
+	margin-bottom: 20px;
+	white-space: pre-line;
+}
 
 .pricing__row {
   display: flex;

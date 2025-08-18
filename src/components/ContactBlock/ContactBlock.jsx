@@ -12,14 +12,14 @@ function ContactBlock({ title, className, children }) {
                         <span className={styles.contact__icon}>
                             <PhoneIcon className={styles.icon} />
                         </span>
-                        <span className={styles.contact__text}>Телефон: +7 (800) 123-45-67</span>
+                        <span className={styles.contact__text}>Телефон: +7(495)204-3904</span>
                     </div>
 
                     <div className={styles.contact__row}>
                         <span className={styles.contact__icon}>
                             <EmailIcon className={styles.icon} />
                         </span>
-                        <span className={styles.contact__text}>Почта: example@dtf.promo</span>
+                        <span className={styles.contact__text}>Почта: info@dtf.promo</span>
                     </div>
                 </div>
 
@@ -31,7 +31,8 @@ function ContactBlock({ title, className, children }) {
             <div className={styles.contacts__media}>
                 <h3 className={styles.media__title}>Наш офис</h3>
                 <h4 className={styles.media__desription}>
-                    Кремлёвская набережная, 1, Москва, 109012 <br /> Координаты: 55.751442, 37.615569
+                    Московская область, г.о. Химки, мкр. Сходня, ул. Ленинградская, д.4
+                    <br /> Координаты: 55.959127, 37.317643
                 </h4>
                 <img src="/images/location.png" alt="Фото офиса" className={styles.media__image} />
             </div>

@@ -16,8 +16,8 @@ function Footer() {
                 <div className={styles.column}>
                     <h3 className={styles.columnTitle}>Контакты</h3>
                     <div className={styles.contactInfo}>
-                        <p>E-mail: example@dtf.promo</p>
-                        <p>Phone: +7 (800) 123-45-67</p>
+                        <p>E-mail: info@dtf.promo</p>
+                        <p>Phone: +7(495)204-3904</p>
                     </div>
                 </div>
 
