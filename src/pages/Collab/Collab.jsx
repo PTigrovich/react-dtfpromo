@@ -48,7 +48,7 @@ function Collab() {
                         </p>
                         <div className={styles.imageWrapper}>
                             <img
-                                src={process.env.PUBLIC_URL + '/images/collab-production.png'}
+                                src={process.env.PUBLIC_URL + '/images/collab-production.PNG'}
                                 alt="Производство сотрудничество"
                                 className={styles.productImage}
                                 onError={e => {
