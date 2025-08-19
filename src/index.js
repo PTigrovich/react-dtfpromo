@@ -1,7 +1,7 @@
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './styles/index.scss';
-import Home from './pages/Home/Home';
+import Homec from './pages/Homec/Home';
 import Contact from './pages/Contact/Contact';
 import Delivery from './pages/Delivery/Delivery';
 import Layout from './components/Layout/Layout';
@@ -17,7 +17,7 @@ const router = createBrowserRouter([
         children: [
             {
                 index: true, // Эквивалент path: '/'
-                element: <Home />,
+                element: <Homec />,
             },
             {
                 path: 'delivery',

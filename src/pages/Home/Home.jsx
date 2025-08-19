@@ -3,7 +3,6 @@ import ButtonQuote from '../../components/ButtonQuote/ButtonQuote';
 import { useEffect } from 'react'; 
 import SectionBenefits from '../../components/SectionBenefits/SectionBenefits';
 import SectionPriority from '../../components/SectionPriority/SectionPriority';
-import CardBenefits from '../../components/CardBenefits/CardBenefits';
 import Catalog from '../../components/Catalog/Catalog';
 
 function Home() {
