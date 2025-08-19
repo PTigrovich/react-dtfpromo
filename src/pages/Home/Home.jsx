@@ -13,9 +13,7 @@ function Home() {
     return (
         <>
             <h1 className={styles.home__title}>Широкоформатная DTF печать. Собственное производство, без посредников.</h1>
-            <div className={styles.wrapper__benefit}>
-                <Catalog />
-            </div>
+            
             <SectionBenefits />
             <Catalog />
             <h2 className={styles.home__subtitle}>Наш приоритет - Ваша выгода!</h2>
