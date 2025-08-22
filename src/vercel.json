@@ -1,0 +1,70 @@
+{
+    "headers": [
+        {
+            "source": "/(.*)",
+            "has": [
+                {
+                    "type": "header",
+                    "key": "user-agent",
+                    "value": "(googlebot|bingbot|yandex|baiduspider|twitterbot|facebookexternalhit|linkedinbot|embedly|quora|pinterest|slackbot|whatsapp|vkshare|telegrambot)"
+                }
+            ],
+            "headers": [
+                {
+                    "key": "x-vercel-prerender",
+                    "value": "1"
+                },
+                {
+                    "key": "x-prerender-token",
+                    "value": "GhXpNTiydN5EwyojgF1V"
+                }
+            ]
+        },
+        {
+            "source": "/(.*)",
+            "has": [
+                {
+                    "type": "query",
+                    "key": "_escaped_fragment_"
+                }
+            ],
+            "headers": [
+                {
+                    "key": "x-vercel-prerender",
+                    "value": "1"
+                },
+                {
+                    "key": "x-prerender-token",
+                    "value": "GhXpNTiydN5EwyojgF1V"
+                }
+            ]
+        }
+    ],
+    "rewrites": [
+        {
+            "source": "/(.*)",
+            "has": [
+                {
+                    "type": "header",
+                    "key": "user-agent",
+                    "value": "(googlebot|bingbot|yandex|baiduspider|twitterbot|facebookexternalhit|linkedinbot|embedly|quora|pinterest|slackbot|whatsapp|vkshare|telegrambot)"
+                }
+            ],
+            "destination": "https://service.prerender.io/https://react-dtfpromo.vercel.app/:1"
+        },
+        {
+            "source": "/(.*)",
+            "has": [
+                {
+                    "type": "query",
+                    "key": "_escaped_fragment_"
+                }
+            ],
+            "destination": "https://service.prerender.io/https://react-dtfpromo.vercel.app/:1"
+        },
+        {
+            "source": "/(.*)",
+            "destination": "/index.html"
+        }
+    ]
+}

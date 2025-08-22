@@ -3,10 +3,10 @@ import styles from './SectionDTFAbout.module.scss';
 function SectionDTFAbout() {
     return (
         <section className={styles.wrapper}>
-            <p className={styles.lead}>
+            <h2 className={styles.lead}>
                 Наша компания оснащена современным оборудованием AUDLEY (комплекс с 4 печатающими головами), что обеспечивает стабильное качество и высокую
                 скорость. Печатаем экологичными чернилами на водной основе (CMYK+White) по PET‑плёнке.
-            </p>
+            </h2>
 
             <div className={styles.hero}>
                 <img src={process.env.PUBLIC_URL + '/images/equipment.PNG'} alt="Оборудование DTF" />
