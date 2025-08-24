@@ -39,13 +39,13 @@ function SectionDTFAbout() {
                 </div>
             </div>
 
-            <div className={styles.gallery}>
+            {/* <div className={styles.gallery}>
                 <img src={process.env.PUBLIC_URL + '/images/item1.png'} alt="Пример печати 1" />
                 <img src={process.env.PUBLIC_URL + '/images/item2.png'} alt="Пример печати 2" />
                 <img src={process.env.PUBLIC_URL + '/images/item3.png'} alt="Пример печати 3" />
                 <img src={process.env.PUBLIC_URL + '/images/item4.png'} alt="Пример печати 4" />
                 <img src={process.env.PUBLIC_URL + '/images/item5.png'} alt="Пример печати 5" />
-            </div>
+            </div> */}
 
             <div className={styles.note}>Работаем официально, с договором и безналичным расчётом с НДС 20%.</div>
         </section>

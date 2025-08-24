@@ -19,7 +19,7 @@ function Home() {
             <ButtonQuote className={styles.home__buttonQuote}>Рассчитать стоимость заказа</ButtonQuote>
             <SectionBenefits />
             
-            <Catalog />
+            {/* <Catalog /> */}
             <h2 className={styles.home__subtitle}>Наш приоритет - Ваша выгода!</h2>
             <ButtonQuote className={styles.home__buttonQuote}>Рассчитать стоимость заказа</ButtonQuote>
             <SectionPriority />
