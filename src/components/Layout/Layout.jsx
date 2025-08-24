@@ -8,7 +8,14 @@ import { Outlet } from 'react-router-dom';
 const Layout = () => {
   return (
       <div className={styles.layout}>
-       
+          <Header className={styles.header} />
+          <main className={styles.content}>
+             
+              <Outlet />
+          </main>
+          {/* Вот это было пропущено! */}
+          <Footer className={styles.footer} />
+          <FloatingContactButton />
       </div>
   );
 };
