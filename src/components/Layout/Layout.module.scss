@@ -6,27 +6,13 @@
 
 .content {
   flex: 1;
-  position: relative;
-  min-height: 100vh;
+  background-image: url('../../assets/images/background.jpg');
+  
+  background-size: cover;
+  background-position: center;
   overflow: hidden; /* Важно для мобильных */
 }
 
-.content::before {
-  content: '';
-  position: fixed; /* Всегда fixed */
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url('../../assets/images/background.jpg');
-  background-size: cover;
-  background-position: center;
-  z-index: -1;
-  
-  /* Критично для мобильных */
-  height: 100vh;
-  width: 100vw;
-}
 
 
 
