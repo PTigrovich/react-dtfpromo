@@ -5,18 +5,30 @@
 }
 
 .content {
-  flex: 1;  // Контент занимает всё свободное место
+  flex: 1;
   position: relative;
+  min-height: 100vh; /* Важно для мобильных */
+}
+
+.content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-image: url('../../assets/images/backgroung.jpg');
   background-size: cover;
   background-position: center;
-  
-  @media (min-width: 768px) {
-  .content {
-    background-attachment: fixed;
-  }
+  z-index: -1;
 }
 
+/* Только для десктопов добавляем fixed эффект */
+@media (min-width: 1024px) {
+  .content::before {
+    position: fixed;
+    height: 100vh;
+  }
 }
 
 // Если Header должен быть sticky:
