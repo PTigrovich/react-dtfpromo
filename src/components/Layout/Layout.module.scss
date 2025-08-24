@@ -10,7 +10,13 @@
   background-image: url('../../assets/images/backgroung.jpg');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;	
+  
+  @media (min-width: 768px) {
+  .content {
+    background-attachment: fixed;
+  }
+}
+
 }
 
 // Если Header должен быть sticky:
