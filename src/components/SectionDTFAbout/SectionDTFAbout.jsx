@@ -47,7 +47,7 @@ function SectionDTFAbout() {
                 <img src={process.env.PUBLIC_URL + '/images/item5.png'} alt="Пример печати 5" />
             </div> */}
 
-            <div className={styles.note}>Работаем официально, с договором и безналичным расчётом с НДС 20%.</div>
+            <div className={styles.note}>Работаем только с юридическими лицами по бещналичному расчету с НДС 20%.</div>
         </section>
     );
 }

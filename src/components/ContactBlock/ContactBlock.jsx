@@ -9,6 +9,12 @@ function ContactBlock({ title, className, children }) {
             <div className={styles.contacts__wrapper}>
                 <div className={styles.contacts__info}>
                     <div className={styles.contact__row}>
+                        <span className={styles.contact__text}>ООО "ДТФ ПРОМО"</span>
+                    </div>
+                    <div className={styles.contact__row}>
+                        <span className={styles.contact__text}>ИНН 5047317958</span>
+                    </div>
+                    <div className={styles.contact__row}>
                         <span className={styles.contact__icon}>
                             <PhoneIcon className={styles.icon} />
                         </span>
@@ -31,7 +37,10 @@ function ContactBlock({ title, className, children }) {
             <div className={styles.contacts__media}>
                 <h3 className={styles.media__title}>Наш офис</h3>
                 <h4 className={styles.media__desription}>
-                    Московская область, г.о. Химки, мкр. Сходня, ул. Ленинградская, д.4
+                    Московская область, <br />
+                    г.о. Химки, мкр. Сходня,
+                    <br />
+                    ул. Ленинградская, д.4
                     <br /> Координаты: 55.959127, 37.317643
                 </h4>
                 <img src="/images/location.png" alt="Фото офиса" className={styles.media__image} />

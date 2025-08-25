@@ -50,7 +50,7 @@
 
 .form__textarea {
   max-height: 10px;
-  min-height: 120px; /* Фиксированная начальная высота */
+  min-height: 200px; /* Фиксированная начальная высота */
   resize: vertical;
   resize: none; /* Запрещаем изменение размера */
   
@@ -68,4 +68,5 @@
 }
 .form__button{
 	height: 50px;
+	margin-top: 55px;
 }
