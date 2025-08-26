@@ -1,3 +1,4 @@
+import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './styles/index.scss';
@@ -7,16 +8,13 @@ import Delivery from './pages/Delivery/Delivery';
 import Layout from './components/Layout/Layout';
 import Collab from './pages/Collab/Collab';
 
-
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
     {
         path: '/',
-        element: <Layout />, // Layout как обертка для дочерних роутов
+        element: <Layout />,
         children: [
             {
-                index: true, // Эквивалент path: '/'
+                index: true,
                 element: <Home />,
             },
             {
@@ -34,8 +32,24 @@ const router = createBrowserRouter([
         ],
     },
 ]);
-root.render(
-    
-        <RouterProvider router={router} />
-    
-);
+
+// Для react-snap
+const rootElement = document.getElementById('root');
+
+if (rootElement.hasChildNodes()) {
+    // Гидратация для предварительно отрендеренного контента
+    ReactDOM.hydrateRoot(
+        rootElement,
+        <React.StrictMode>
+            <RouterProvider router={router} />
+        </React.StrictMode>
+    );
+} else {
+    // Обычный рендер для разработки
+    const root = ReactDOM.createRoot(rootElement);
+    root.render(
+        <React.StrictMode>
+            <RouterProvider router={router} />
+        </React.StrictMode>
+    );
+}
