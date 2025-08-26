@@ -1,7 +1,5 @@
 // api/render-bot.js
-export const config = {
-    runtime: 'edge',
-};
+
 
 // HTML шаблоны прямо в коде
 const HTML_TEMPLATES = {

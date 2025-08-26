@@ -1,7 +1,7 @@
 {
+    "version": 2,
     "functions": {
         "api/render-bot.js": {
-            "runtime": "@vercel/node",
             "maxDuration": 30
         }
     },
@@ -9,6 +9,10 @@
         {
             "src": "/api/render-bot",
             "dest": "/api/render-bot.js"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/index.html"
         }
     ]
 }
