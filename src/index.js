@@ -21,35 +21,9 @@ const router = createBrowserRouter([
     },
 ]);
 
-const rootElement = document.getElementById('root');
-
-if (typeof window !== 'undefined') {
-    // Код только для браузера
-}
-
-try {
-    if (rootElement.hasChildNodes()) {
-        ReactDOM.hydrateRoot(
-            rootElement,
-            <React.StrictMode>
-                <RouterProvider router={router} />
-            </React.StrictMode>
-        );
-    } else {
-        const root = ReactDOM.createRoot(rootElement);
-        root.render(
-            <React.StrictMode>
-                <RouterProvider router={router} />
-            </React.StrictMode>
-        );
-    }
-} catch (error) {
-    console.error('Hydration error:', error);
-    const root = ReactDOM.createRoot(rootElement);
-    root.render(
-        <React.StrictMode>
-            <RouterProvider router={router} />
-        </React.StrictMode>
-    );
-}
-
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+    <React.StrictMode>
+        <RouterProvider router={router} />
+    </React.StrictMode>
+);
