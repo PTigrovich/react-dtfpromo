@@ -27,12 +27,20 @@ const BOT_USER_AGENTS = [
     'vkShare',
 ];
 
+// Исключаем статические файлы из обработки middleware
+const STATIC_EXTENSIONS = ['.ico', '.jpg', '.jpeg', '.png', '.gif', '.svg', '.css', '.js', '.json'];
+
 export default function middleware(request) {
     try {
+        const url = new URL(request.url);
+
+        // Пропускаем статические файлы
+        if (STATIC_EXTENSIONS.some(ext => url.pathname.endsWith(ext))) {
+            return new Response(null, { status: 200 });
+        }
+
         const userAgent = request.headers.get('user-agent') || '';
         const isBotRequest = BOT_USER_AGENTS.some(bot => userAgent.toLowerCase().includes(bot.toLowerCase()));
-
-        const url = new URL(request.url);
 
         if (isBotRequest) {
             return Response.rewrite(new URL(`/api/render-bot?pathname=${url.pathname}`, request.url));

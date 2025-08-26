@@ -5,6 +5,28 @@
             "dest": "/api/render-bot.js"
         },
         {
+            "src": "/static/(.*)",
+            "dest": "/static/$1",
+            "headers": {
+                "Cache-Control": "public, max-age=31536000, immutable"
+            }
+        },
+        {
+            "src": "/images/(.*)",
+            "dest": "/images/$1",
+            "headers": {
+                "Cache-Control": "public, max-age=31536000, immutable"
+            }
+        },
+        {
+            "src": "/asset-manifest.json",
+            "dest": "/asset-manifest.json"
+        },
+        {
+            "src": "/favicon.ico",
+            "dest": "/favicon.ico"
+        },
+        {
             "src": "/(.*)",
             "dest": "/index.html"
         }
