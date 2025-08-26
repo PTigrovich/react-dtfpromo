@@ -1,15 +1,5 @@
 {
-    "version": 3,
-    "builds": [
-        {
-            "src": "package.json",
-            "use": "@vercel/static-build"
-        },
-        {
-            "src": "api/render-bot.js",
-            "use": "@vercel/node"
-        }
-    ],
+    
     "routes": [
         {
             "src": "/api/render-bot",
