@@ -33,23 +33,9 @@ const router = createBrowserRouter([
     },
 ]);
 
-// Для react-snap
-const rootElement = document.getElementById('root');
-
-if (rootElement.hasChildNodes()) {
-    // Гидратация для предварительно отрендеренного контента
-    ReactDOM.hydrateRoot(
-        rootElement,
-        <React.StrictMode>
-            <RouterProvider router={router} />
-        </React.StrictMode>
-    );
-} else {
-    // Обычный рендер для разработки
-    const root = ReactDOM.createRoot(rootElement);
-    root.render(
-        <React.StrictMode>
-            <RouterProvider router={router} />
-        </React.StrictMode>
-    );
-}
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+    <React.StrictMode>
+        <RouterProvider router={router} />
+    </React.StrictMode>
+);
