@@ -1,10 +1,15 @@
 {
-    "version": 2,
-    "functions": {
-        "api/render-bot.js": {
-            "maxDuration": 30
+    "version": 3,
+    "builds": [
+        {
+            "src": "package.json",
+            "use": "@vercel/static-build"
+        },
+        {
+            "src": "api/render-bot.js",
+            "use": "@vercel/node"
         }
-    },
+    ],
     "routes": [
         {
             "src": "/api/render-bot",
