@@ -1,20 +1,14 @@
 {
-  "version": 2,
-  "functions": {
-    "api/render-bot.js": {
-      "maxDuration": 30,
-      "memory": 1024
-    }
-  },
-  "headers": [
-    {
-      "source": "/static/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
+    "functions": {
+        "api/render-bot.js": {
+            "runtime": "@vercel/node",
+            "maxDuration": 30
         }
-      ]
-    }
-  ]
+    },
+    "routes": [
+        {
+            "src": "/api/render-bot",
+            "dest": "/api/render-bot.js"
+        }
+    ]
 }

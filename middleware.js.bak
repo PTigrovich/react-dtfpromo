@@ -1,27 +1,24 @@
+// middleware.js
 import { isBot } from 'is-bot';
 
 export const config = {
-    matcher: ['/((?!_next/static|_next/image|favicon.ico|static/|assets/|.*\\.(?:svg|png|jpg|jpeg|gif|webp|woff2|js|css|json|xml|txt|ico)$).*)'],
+    runtime: 'edge',
+    matcher: ['/', '/delivery', '/collab', '/contact'],
 };
 
 export default function middleware(request) {
     try {
-        const url = new URL(request.url);
         const userAgent = request.headers.get('user-agent') || '';
         const isBotRequest = isBot(userAgent);
+        const url = new URL(request.url);
 
         if (isBotRequest) {
-            console.log('Bot detected:', userAgent);
-            const botUrl = new URL(request.url);
-            botUrl.pathname = `/render-bot${botUrl.pathname}`;
-            return Response.rewrite(botUrl);
+            console.log('Bot detected:', url.pathname);
+            return Response.rewrite(new URL(`/api/render-bot?pathname=${url.pathname}`, request.url));
         }
 
-        // Явно возвращаем undefined вместо просто return;
-        return undefined;
+        return new Response(null, { status: 200 });
     } catch (error) {
-        console.error('Middleware error:', error);
-        // Явно возвращаем undefined
-        return undefined;
+        return new Response(null, { status: 200 });
     }
 }
