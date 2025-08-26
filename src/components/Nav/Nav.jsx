@@ -22,7 +22,7 @@ function Nav() {
 
             {/* About - обычный переход на страницу */}
             <NavLink to="/contact" className={({ isActive }) => `${styles.nav__link} ${isActive ? styles.active : ''}`}>
-                Контакт
+                Контакты
             </NavLink>
         </nav>
     );
