@@ -5,9 +5,10 @@ module.exports = {
     concurrency: 1,
     skipThirdPartyRequests: true,
     cache: false,
-    // Для React Router v6
-    preloadResources: true,
+    // Важные настройки для React Router
+    preloadResources: false,
     preloadImages: false,
-    // Игнорируем динамические пути
-    exclude: ['/404', '/500'],
+    inlineCss: false,
+    // Игнорируем API routes
+    exclude: ['/api/*', '/static/*', '/images/*', '/asset-manifest.json'],
 };
