@@ -1,7 +1,7 @@
 import styles from './Delivery.module.scss';
 import { useEffect } from 'react'; 
 import DeliveryBlock from '../../components/DeliveryBlock/DeliveryBlock';
-import SeoMetaTags from '../components/SeoMetaTags';
+import SeoMetaTags from '../../components/SeoMetaTags';
 
 
 

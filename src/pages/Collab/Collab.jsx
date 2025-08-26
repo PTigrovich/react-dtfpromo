@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import styles from './Collab.module.scss'; // Создайте этот файл стилей
-import SeoMetaTags from '../components/SeoMetaTags';
+import SeoMetaTags from '../../components/SeoMetaTags';
 
 
 function Collab() {

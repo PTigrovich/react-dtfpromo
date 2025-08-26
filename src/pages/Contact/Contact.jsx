@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import DeliveryBlock from '../../components/DeliveryBlock/DeliveryBlock';
 import FormBackCall from '../../components/FormBackCall/FormBackCall';
 import ContactBlock from '../../components/ContactBlock/ContactBlock';
-import SeoMetaTags from '../components/SeoMetaTags';
+import SeoMetaTags from '../../components/SeoMetaTags';
 
 
 

@@ -3,7 +3,7 @@ import ButtonQuote from '../../components/ButtonQuote/ButtonQuote';
 import { useEffect } from 'react';
 import SectionBenefits from '../../components/SectionBenefits/SectionBenefits';
 import SectionPriority from '../../components/SectionPriority/SectionPriority';
-import SeoMetaTags from '../components/SeoMetaTags';
+import SeoMetaTags from '../../components/SeoMetaTags';
 import SectionDTFAbout from '../../components/SectionDTFAbout/SectionDTFAbout';
 
 function Home() {
