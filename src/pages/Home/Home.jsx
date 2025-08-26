@@ -3,7 +3,7 @@ import ButtonQuote from '../../components/ButtonQuote/ButtonQuote';
 import { useEffect } from 'react';
 import SectionBenefits from '../../components/SectionBenefits/SectionBenefits';
 import SectionPriority from '../../components/SectionPriority/SectionPriority';
-import Catalog from '../../components/Catalog/Catalog';
+import SeoMetaTags from '../components/SeoMetaTags';
 import SectionDTFAbout from '../../components/SectionDTFAbout/SectionDTFAbout';
 
 function Home() {
@@ -13,12 +13,19 @@ function Home() {
 
     return (
         <>
+            <SeoMetaTags
+                title="Широкоформатная DTF печать."
+                description="Собственное производство, без посредников."
+                keywords="3D печать, 3D модели, создание прототипов, 3D принтеры"
+                
+                url="/"
+            />
             <h1 className={styles.home__title}>Широкоформатная DTF печать. Собственное производство, без посредников.</h1>
             <ButtonQuote className={styles.home__buttonQuote}>Рассчитать стоимость заказа</ButtonQuote>
             <SectionDTFAbout />
             <ButtonQuote className={styles.home__buttonQuote}>Рассчитать стоимость заказа</ButtonQuote>
             <SectionBenefits />
-            
+
             {/* <Catalog /> */}
             <h2 className={styles.home__subtitle}>Наш приоритет - Ваша выгода!</h2>
             <ButtonQuote className={styles.home__buttonQuote}>Рассчитать стоимость заказа</ButtonQuote>
