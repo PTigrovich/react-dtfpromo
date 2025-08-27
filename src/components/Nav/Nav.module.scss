@@ -5,7 +5,7 @@
 		display:flex;
 	   justify-content: space-between;
 		flex-wrap:wrap;
-		
+	
 		
 		background-color: transparent;
 		font-weight: 400;
@@ -20,7 +20,7 @@
 		font-size: 16px;
 		transition: color 0.3s ease;
 		display: flex;
-		
+		padding-left: 10px;
 		&:hover {
     		color: rgb(196, 223, 240);
   		}
@@ -40,7 +40,7 @@
 	 flex-direction: column;
 	 max-width: 50%;
 	 width: 130px;
-	 height: 100px;
+	 
 	 padding: 10px 0;
   }
 }
