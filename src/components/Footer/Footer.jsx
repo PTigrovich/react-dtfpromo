@@ -40,7 +40,7 @@ function Footer() {
                 </div>
             </div>
 
-            <div className={styles.copyright}>© {new Date().getFullYear()} DTF Direct. All rights reserved.</div>
+            <div className={styles.copyright}>© {new Date().getFullYear()} DTF Promo. All rights reserved.</div>
         </footer>
     );
 }
