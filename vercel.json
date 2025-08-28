@@ -4,6 +4,24 @@
             "src": "/api/render-bot",
             "dest": "/api/render-bot.js"
         },
+
+        {
+            "src": "/sitemap.xml",
+            "dest": "/sitemap.xml",
+            "headers": {
+                "Cache-Control": "public, max-age=3600, s-maxage=3600",
+                "Content-Type": "application/xml" 
+            }
+        },
+   
+        {
+            "src": "/robots.txt",
+            "dest": "/robots.txt",
+            "headers": {
+                "Cache-Control": "public, max-age=3600, s-maxage=3600",
+                "Content-Type": "text/plain"
+            }
+        },
         {
             "src": "/static/(.*)",
             "dest": "/static/$1",
@@ -26,6 +44,7 @@
             "src": "/favicon.ico",
             "dest": "/favicon.ico"
         },
+        
         {
             "src": "/(.*)",
             "dest": "/index.html"
