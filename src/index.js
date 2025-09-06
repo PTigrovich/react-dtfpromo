@@ -7,6 +7,7 @@ import Contact from './pages/Contact/Contact';
 import Delivery from './pages/Delivery/Delivery';
 import Layout from './components/Layout/Layout';
 import Collab from './pages/Collab/Collab';
+import Price from './pages/Price/Price';
 
 const router = createBrowserRouter([
     {
@@ -14,6 +15,7 @@ const router = createBrowserRouter([
         element: <Layout />,
         children: [
             { index: true, element: <Home /> },
+            { path: 'price', element: <Price /> },
             { path: 'delivery', element: <Delivery /> },
             { path: 'contact', element: <Contact /> },
             { path: 'collab', element: <Collab /> },

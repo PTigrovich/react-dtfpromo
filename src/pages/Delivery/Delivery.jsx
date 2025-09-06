@@ -1,12 +1,10 @@
 import styles from './Delivery.module.scss';
-import { useEffect } from 'react'; 
+import { useEffect } from 'react';
 import DeliveryBlock from '../../components/DeliveryBlock/DeliveryBlock';
 import SeoMetaTags from '../../components/SeoMetaTags';
 
-
-
-function About() {
-	useEffect(() => {
+function Delivery() {
+    useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
     return (
@@ -45,12 +43,12 @@ function About() {
 
                 <DeliveryBlock className={styles.wrapper__smallWrapper} title={'Наши Контакты'}>
                     <p>
-                        Для получения дополнительной помощи обращайтесь в нашу службу поддержки клиентов по адресу info@dtf.promo или звоните нам по телефону
-                        +7(495)204-3904.
+                        Для получения дополнительной помощи обращайтесь в нашу службу поддержки клиентов по адресу <strong>info@dtf.promo</strong> или звоните
+                        нам по телефону +7(495)204-3904.
                     </p>
                 </DeliveryBlock>
             </div>
         </>
     );
 }
-export default About;
+export default Delivery;

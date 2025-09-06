@@ -1,0 +1,341 @@
+// Локальные брейкпоинты для таблицы
+$tablet: 768px;
+$mobile: 680px;  // Изменен для переключения на карточки
+$mobile-small: 480px;
+
+// Миксины для удобного использования
+@mixin tablet {
+  @media (max-width: #{$tablet - 1px}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: #{$mobile - 1px}) {
+    @content;
+  }
+}
+
+@mixin mobile-small {
+  @media (max-width: #{$mobile-small - 1px}) {
+    @content;
+  }
+}
+
+.tablePrice {
+    width: 100%;
+    overflow-x: auto;
+    
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 
+        6px 0 7.5px -2px rgba(0, 0, 0, 0.025),
+        -6px 0 7.5px -2px rgba(0, 0, 0, 0.025),
+        0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transition: 
+        transform 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28),
+        box-shadow 0.4s ease-out,
+        background-color 0.3s ease;
+}
+
+.tablePrice:hover {
+    background-color: rgb(230, 240, 247);
+    transform: translateY(0px);
+    box-shadow: 
+        0 15px 30px rgba(72, 157, 254, 0.25),
+        0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background: transparent;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.table thead {
+    background: rgba(0, 6, 19, 0.8);
+    color: white;
+}
+
+.table th {
+    padding: 15px 10px;
+    text-align: center;
+    font-weight: 600;
+    border: none;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.table th:first-child {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.headerText {
+    display: inline-block;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+// Стили для карточного отображения на мобильных
+.cardView {
+    display: none;
+}
+
+.priceCard {
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 12px;
+    box-shadow: 
+        6px 0 7.5px -2px rgba(0, 0, 0, 0.025),
+        -6px 0 7.5px -2px rgba(0, 0, 0, 0.025),
+        0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transition: 
+        transform 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28),
+        box-shadow 0.4s ease-out,
+        background-color 0.3s ease;
+}
+
+.priceCard:hover {
+    background-color: rgb(230, 240, 247);
+    transform: translateY(0px);
+    box-shadow: 
+        0 15px 30px rgba(72, 157, 254, 0.25),
+        0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    padding: 12px;
+    background: rgba(0, 6, 19, 0.8);
+    border-radius: 6px;
+    color: white;
+}
+
+.cardTitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+}
+
+.cardSize {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.priceGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+
+.priceItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 8px;
+    background: rgb(239, 244, 247);
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.priceItem:nth-child(even) {
+    background: transparent;
+}
+
+.priceLabel {
+    font-family: 'Open Sans', sans-serif;
+    color: #4a4a4a;
+    font-weight: 400;
+}
+
+.priceValue {
+    font-family: 'Open Sans', sans-serif;
+    color: #2b2b2b;
+    font-weight: 600;
+}
+
+.individualPrice {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 8px;
+    background: rgba(72, 157, 254, 0.1);
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.table tbody tr:nth-child(even) {
+    background: rgb(239, 244, 247);
+}
+
+.table tbody tr:nth-child(odd) {
+    background: rgb(255, 255, 255); // Белый цвет для нечетных строк
+}
+
+.table tbody tr:hover {
+    background: rgba(72, 157, 254, 0.1);
+    transition: all 0.2s ease;
+}
+
+.table td {
+    padding: 12px 10px;
+    text-align: center;
+    border: none;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    color: #2b2b2b;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.table td:first-child {
+    text-align: left;
+    padding-left: 20px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.format {
+    color: #0066cc;
+    font-weight: 700 !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.individual {
+    color: #4a4a4a;
+    font-style: italic;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+/* Адаптивность - Планшеты */
+@include tablet {
+    .tablePrice {
+        padding: 15px;
+        margin: 15px 0;
+    }
+    
+    .table {
+        font-size: 12px;
+    }
+    
+    .table th,
+    .table td {
+        padding: 8px 6px;
+    }
+    
+    .table th:first-child,
+    .table td:first-child {
+        padding-left: 12px;
+    }
+    
+    .format {
+        font-size: 12px;
+    }
+    
+    .individual {
+        font-size: 11px;
+    }
+    
+    .headerText {
+        font-size: 12px;
+        line-height: 1.1;
+    }
+}
+
+/* Адаптивность - Мобильные (карточки) */
+@include mobile {
+    .tablePrice {
+        padding: 0;
+    }
+    
+    // Скрываем таблицу
+    .table {
+        display: none;
+    }
+    
+    // Показываем карточки
+    .cardView {
+        display: block;
+    }
+    
+    .priceCard {
+        margin-bottom: 16px;
+    }
+    
+    .cardTitle {
+        font-size: 15px;
+        font-weight: 700;
+    }
+    
+    .cardSize {
+        font-size: 13px;
+        font-weight: 500;
+    }
+    
+    .priceGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6px;
+    }
+    
+    .priceItem {
+        padding: 5px 6px;
+        font-size: 12px;
+    }
+    
+    .individualPrice {
+        font-size: 12px;
+        padding: 5px 6px;
+    }
+}
+
+/* Адаптивность - Маленькие мобильные */
+@include mobile-small {
+    .tablePrice {
+        padding: 0;
+    }
+    
+    .priceCard {
+        padding: 12px;
+        margin-bottom: 12px;
+    }
+    
+    .cardTitle {
+        font-size: 14px;
+        font-weight: 700;
+    }
+    
+    .cardSize {
+        font-size: 12px;
+        font-weight: 500;
+    }
+    
+    .priceGrid {
+        grid-template-columns: 1fr;
+        gap: 4px;
+    }
+    
+    .priceItem {
+        padding: 4px 6px;
+        font-size: 11px;
+    }
+    
+    .individualPrice {
+        font-size: 11px;
+        padding: 4px 6px;
+    }
+}

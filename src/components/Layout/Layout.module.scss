@@ -7,10 +7,11 @@
 .content {
   flex: 1;
   background-image: url('../../assets/images/background.jpg');
-  
   background-size: cover;
   background-position: center;
   overflow: hidden; /* Важно для мобильных */
+  position: relative;
+  z-index: 1; /* Ниже header'а (100) */
 }
 
 

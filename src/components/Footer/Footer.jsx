@@ -28,7 +28,13 @@ function Footer() {
                         <NavLink to="/" className={styles.navLink}>
                             Главная
                         </NavLink>
-                        
+                        <NavLink to="/price" className={styles.navLink}>
+                            Цены
+                        </NavLink>
+
+                        <NavLink to="/delivery" className={styles.navLink}>
+                            Доставка
+                        </NavLink>
 
                         <NavLink to="/collab" className={styles.navLink}>
                             Сотрудничество

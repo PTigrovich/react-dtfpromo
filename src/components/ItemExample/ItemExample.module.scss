@@ -1,0 +1,57 @@
+.itemExample {
+    width: 100%;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center; // Центрируем содержимое по горизонтали
+    padding: 0;
+}
+
+.itemTitle {
+    font-size: 28px; // Увеличиваем до размера основных заголовков
+    color: #000613; // Сохраняем фирменный темный цвет
+    margin-bottom: 20px;
+    text-align: center; // Центрируем заголовок
+    width: 100%;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif; // Используем основной шрифт для заголовков
+    letter-spacing: 0.5px; // Добавляем межбуквенный интервал как в других заголовках
+    text-transform: uppercase; // Делаем заглавными буквами для соответствия стилистике
+}
+
+.itemImage {
+    width: 100%; // Растягиваем на всю ширину
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    object-fit: cover; // Растягиваем изображение с сохранением пропорций
+    
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .itemTitle {
+        font-size: 24px; // Пропорционально уменьшенный размер
+        margin-bottom: 15px;
+        letter-spacing: 0.3px; // Уменьшенный межбуквенный интервал
+    }
+}
+
+@media (max-width: 480px) {
+    .itemTitle {
+        font-size: 20px; // Пропорционально уменьшенный размер
+        margin-bottom: 10px;
+        letter-spacing: 0.2px; // Еще более уменьшенный межбуквенный интервал
+    }
+    
+    .itemImage {
+        border-radius: 6px;
+    }
+}
