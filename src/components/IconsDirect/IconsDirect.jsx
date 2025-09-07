@@ -7,10 +7,10 @@ import TelegramIcon from '../../assets/images/telegram-icon.svg';
 const IconsDirect = () => {
     return (
         <div className={styles.messengers}>
-            <a href="https://wa.me/78008888" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/+79804117891" target="_blank" rel="noopener noreferrer">
                 <img src={WhatsAppIcon} alt="WhatsApp" className={styles.messengerIcon} />
             </a>
-            <a href="https://t.me/dtfpromo" target="_blank" rel="noopener noreferrer">
+            <a href="https://t.me/+79804117891" target="_blank" rel="noopener noreferrer">
                 <img src={TelegramIcon} alt="Telegram" className={styles.messengerIcon} />
             </a>
         </div>
